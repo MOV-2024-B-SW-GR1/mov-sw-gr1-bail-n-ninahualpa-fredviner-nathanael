@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AdministrarArtistas">
+
+    <TextView
+        android:id="@+id/tv_crearArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="CREAR ARTISTA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNombreArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nombre del Artista"
+        app:layout_constraintEnd_toEndOf="@+id/tv_crearArtista"
+        app:layout_constraintStart_toStartOf="@+id/tv_crearArtista"
+        app:layout_constraintTop_toBottomOf="@+id/tv_crearArtista" />
+
+    <Switch
+        android:id="@+id/switchActividadArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Es Activo?"
+        app:layout_constraintEnd_toEndOf="@+id/etPopularidadArtista"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/etPopularidadArtista"
+        app:layout_constraintTop_toBottomOf="@+id/etPopularidadArtista" />
+
+    <EditText
+        android:id="@+id/etFechaCreacionArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="(dd/mm/yyyy)"
+        app:layout_constraintEnd_toEndOf="@+id/switchActividadArtista"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/switchActividadArtista"
+        app:layout_constraintTop_toBottomOf="@+id/switchActividadArtista" />
+
+    <Button
+        android:id="@+id/btnCrearArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Aceptar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etLongitudArtista"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/etLongitudArtista"
+        app:layout_constraintTop_toBottomOf="@+id/etLongitudArtista"
+        app:layout_constraintVertical_bias="0.097" />
+
+    <EditText
+        android:id="@+id/etPopularidadArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Popularidad(0.0-5.0)"
+        app:layout_constraintEnd_toEndOf="@+id/etNombreArtista"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etNombreArtista"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreArtista" />
+
+    <EditText
+        android:id="@+id/etLatitudArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Latitud"
+        app:layout_constraintEnd_toEndOf="@+id/etFechaCreacionArtista"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etFechaCreacionArtista"
+        app:layout_constraintTop_toBottomOf="@+id/etFechaCreacionArtista" />
+
+    <EditText
+        android:id="@+id/etLongitudArtista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Longitud"
+        app:layout_constraintEnd_toEndOf="@+id/etLatitudArtista"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etLatitudArtista"
+        app:layout_constraintTop_toBottomOf="@+id/etLatitudArtista" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
